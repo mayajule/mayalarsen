@@ -1,0 +1,43 @@
+
+#mainNav{
+    background-color: rgb(133, 163, 220);
+}
+.text-primary{
+    color: rgb(133, 163, 220);
+} 
+.footer{
+    background-color: rgba(47, 66, 101, 0.836);
+}
+.cta{
+    background-color: rgba(133, 164, 220, 0.584);
+}
+.img-fluid{
+    width: 1500px;
+    text-align: center;
+    
+}
+.bg-faded{
+    background-color: rgba(240, 255, 255, 0.838);
+}
+.list-hours .list-hours-item.today{
+    color: black;
+    font-weight: normal;
+    font-style: normal;
+}
+.list-hours .list-hours-item{
+    font-style: normal;
+    border-bottom: 1px solid black;
+}
+.footer {
+    background-color: #333;   /* Dark background color */
+    color: white;             /* White text color */
+    padding: 15px;            /* Add some padding around the content */
+    text-align: center;       /* Center align the footer content */
+}
+
+.compliment{
+    background-color: #333;   /* Dark background color */
+    color: white;             /* White text color */
+    padding: 15px;            /* Add some padding around the content */
+    text-align: center;       /* Center align the footer content */
+}

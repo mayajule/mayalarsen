@@ -1,0 +1,86 @@
+
+    h4 {
+        text-decoration: none; /* Removes underline */
+        color: rgb(14, 88, 29); /* Changes text color */
+        font-weight: bold; /* Optional styling */
+    }
+
+    h4{
+        color: rgb(4, 133, 43); /* Changes color on hover */
+    }
+
+    body{
+        background-color: rgb(187, 218, 255);
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        margin: 20px;
+        display: flex;                /* Enable flexbox layout */
+        justify-content: center;      /* Center content horizontally */
+        align-items: center;          /* Center content vertically */
+        /* height: 100vh;                Take full viewport height */
+        margin: 0;                    /* Remove default margin */
+    }
+    
+    .container {
+        text-align: center;           /* Optional: Center text inside the container */
+        width: 80%;                   /* Adjust width of the container */
+    }
+
+
+    .covid{
+        color: darkblue;
+    }
+    .orderedlist{
+        font-weight: bold;
+        color: rgb(14, 88, 29);
+        font-style: italic;
+        align-items: normal;
+        list-style-position: inside;  /* Moves the bullets/numbers inside the box */
+        padding: 0;                   /* Remove default padding */
+        margin: 0;                    /* Remove default margin */
+        text-align: center;  
+
+    }
+    .unordered{
+        font-weight: normal;
+        color: rgb(14, 88, 29);
+        font-style: normal;
+        align-items: normal;
+    }
+    /* styles.css */
+    img {
+        border: 3px dashed rgb(14, 88, 29); /* Blue dashed border */
+        padding: 20px; /* Larger padding */
+        /* display: block;          Makes the image a block element */
+        margin-left: auto;       /* Automatically adds margin on the left */
+        margin-right: auto;      /* Automatically adds margin on the right */
+        /* width: 50%;              Optionally set width to control the image size */
+        padding: 5px;
+        margin: 8px;
+
+    }
+    .tableauPlaceholder{
+        align-content: center;
+    }
+    .footer{
+            background-color: #ffffff;   /* Dark background color */
+            color: rgb(127, 0, 181);             /* White text color */
+            padding: 20px;           /* Add padding inside the footer */
+            text-align: center;       /* Center align the footer content */
+        
+    }
+
+
+.compliment{
+    background-color: #ffffff;   /* Dark background color */
+    color: white;             /* White text color */
+    padding: 5px;            /* Add some padding around the content */
+    text-align: center;       /* Center align the footer content */
+    width: 100%;
+}
+
+.top{
+    color:rgb(187, 218, 255) ;
+}
+
+
+

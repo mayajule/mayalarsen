@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative Compliment Generator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f9fc;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        h1 {
+            color: #bf229a;
+            text-shadow: 1px 1px 2px #ccc;
+        }
+        button {
+            background-color: #af4cac;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        button:hover {
+            background-color: #8645a0;
+        }
+        #compliment-box {
+            margin-top: 30px;
+            font-size: 20px;
+            font-style: italic;
+            text-align: center;
+            border: 2px dashed #c610c6;
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 600px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <h1>Creative Compliment Generator</h1>
+    <button id="generate-btn">Generate Compliment</button>
+    <div id="compliment-box">Click the button to receive a compliment!</div>
+
+    <div class="custom-compliment">
+        <input type="text" id="custom-compliment" placeholder="Type your compliment here...">
+        <button id="add-compliment-btn">Add Compliment</button>
+    </div>
+
+    <script>
+        const compliments = [
+            "You have the creativity of a thousand artists!",
+            "Your smile could power a small city.",
+            "You're like a software update—always improving!",
+            "If kindness were currency, you'd be a billionaire.",
+            "You make Mondays feel like Fridays.",
+            "Your ideas are so bright, they outshine the sun!",
+            "You code like a wizard casting spells of brilliance.",
+            "If brilliance were an Olympic sport, you'd be drowning in gold medals.",
+            "You're the human equivalent of a perfect high-five—so satisfying and rare!",
+            "You light up a room like a disco ball, but way classier.",
+            "If charisma were a superpower, you'd already have your own comic book series.",
+            "Your sense of humor is like a breath of fresh air in a room full of tired jokes.",
+            "You're a walking Wikipedia, but way cooler and more reliable.",
+            "You have the kind of creativity that turns doodles into masterpieces.",
+            "Your energy is like a double-shot espresso—refreshing, uplifting, and exactly what's needed.",
+            "You're like a rare collectible: one of a kind and absolutely priceless."
+        ];
+
+        const generateBtn = document.getElementById('generate-btn');
+        const complimentBox = document.getElementById('compliment-box');
+        const customInput = document.getElementById('custom-compliment');
+        const addComplimentBtn = document.getElementById('add-compliment-btn');
+
+        generateBtn.addEventListener('click', () => {
+            const randomIndex = Math.floor(Math.random() * compliments.length);
+            complimentBox.textContent = compliments[randomIndex];
+            
+        });
+        addComplimentBtn.addEventListener('click', () => {
+            const newCompliment = customInput.value.trim();
+            if (newCompliment) {
+                compliments.push(newCompliment);
+                customInput.value = ""; // Clear the input field
+                alert("Your compliment has been added!");
+            } else {
+                alert("Please type a compliment before adding.");
+            }
+        });
+
+    </script>
+</body>
+</html>
